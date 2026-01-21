@@ -1,0 +1,6 @@
+Name: Peter Okafor
+Matric Number: 23CH034211
+Machine Learning Algorithm Used: Random Forest Regressor
+Model Persistence Method: Pickle
+Live URL: https://your-app-name.onrender.com
+GitHub Repository: https://github.com/Peter-ConX/Project_3_House_Prediction_System_Okafor_Peter_23CH034211.git

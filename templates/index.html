@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>House Price Prediction</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f4f4f4;
+            padding: 40px;
+        }
+
+        .container {
+            background: white;
+            padding: 20px;
+            max-width: 400px;
+            margin: auto;
+            border-radius: 5px;
+        }
+
+        input,
+        button {
+            width: 100%;
+            padding: 8px;
+            margin-top: 10px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>House Price Predictor</h2>
+        <form method="POST">
+            <input type="number" name="overallqual" placeholder="Overall Quality" required>
+            <input type="number" name="grlivarea" placeholder="Ground Living Area" required>
+            <input type="number" name="totalbsmtsf" placeholder="Total Basement SF" required>
+            <input type="number" name="garagecars" placeholder="Garage Cars" required>
+            <input type="number" name="fullbath" placeholder="Full Bathrooms" required>
+            <input type="number" name="yearbuilt" placeholder="Year Built" required>
+            <button type="submit">Predict Price</button>
+        </form>
+
+        {% if prediction %}
+        <h3>Predicted Price: ${{ "{:,.2f}".format(prediction) }}</h3>
+        {% endif %}
+    </div>
+
+</body>
+
+</html>
